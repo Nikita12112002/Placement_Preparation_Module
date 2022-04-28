@@ -1,4 +1,4 @@
-TC:O(n) SC:O(1);
+//TC:O(n) SC:O(1)
 
 pair<int,int> missingAndRepeating(vector<int> &A, int n)
 {
