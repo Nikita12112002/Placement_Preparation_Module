@@ -8,7 +8,8 @@
 
 int modularExponentiation(int x, int n, int m) {
 	// Write your code here.
-	 long long int copy=x;
+	 long long int copy=x; // we are making copy of x because 
+	                      //we need long datatype and given x is in integer datatype
 	long long int ans=1;
 	
 	while(n>0)
