@@ -12,9 +12,9 @@ int subarraysXor(vector<int> &arr, int x)
 		
 		if(xr==x)
 			count++;
-		
-		if(m.find(xr^x)!=m.end())
-			count=count+m[xr^x];
+		int y=xr^x;
+		if(m.find(y)!=m.end())
+			count=count+m[y];
 		
 		m[xr]++;
 	}
