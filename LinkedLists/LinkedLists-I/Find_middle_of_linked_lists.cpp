@@ -1,3 +1,4 @@
+//Approach 1- by counting length of LL
  ListNode* middleNode(ListNode* head)
   {
         
@@ -15,4 +16,13 @@
             head=head->next;
         }
         return head;
+    }
+
+//Approach 2- slow and fast pointer
+
+ ListNode* middleNode(ListNode* head) {
+        ListNode *slow = head, *fast = head;
+        while (fast && fast->next)
+            slow = slow->next, fast = fast->next->next;
+        return slow;
     }
