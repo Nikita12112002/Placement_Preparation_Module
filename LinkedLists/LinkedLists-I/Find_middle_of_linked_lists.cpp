@@ -19,6 +19,8 @@
     }
 
 //Approach 2- slow and fast pointer
+//logic - when fast traverse the whole list the slow will defintitely
+// going to point on middle.
 
  ListNode* middleNode(ListNode* head) {
         ListNode *slow = head, *fast = head;
