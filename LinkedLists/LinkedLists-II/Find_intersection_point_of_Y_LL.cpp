@@ -49,3 +49,28 @@
         
         return NULL;
     }
+
+//Approach 3- Best TC:O(2m) SC:O(1)
+
+ListNode *getIntersectionNode(ListNode *head1, ListNode *head2) {
+
+    if(head1==NULL || head2==NULL)
+            return NULL;
+        
+        ListNode *temp1=head1;
+        ListNode *temp2=head2;
+        
+        while(temp1!=temp2)
+        {
+            if(temp1==NULL)
+                temp1=head2;
+            else
+                temp1=temp1->next;
+            if(temp2==NULL)
+                temp2=head1;
+            else
+                temp2=temp2->next;
+        }
+        return temp1;
+    }
+        
