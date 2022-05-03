@@ -1,5 +1,7 @@
 // Approach-1 Brute force - TC:O(n*m) SC:O(n)
-
+// take each node of list 2 and for it traverse full list1,
+// if a node of list1 and list2 matches then return that node 
+// otherwise there is no intersection point
  ListNode *getIntersectionNode(ListNode *head1, ListNode *head2) {
         
         ListNode *temp1=head1;
@@ -24,6 +26,7 @@
 
 
 //Approach 2 - through hashing Tc:O(m+n) Sc:O(n)
+// same approach as previous only hashmap is used to store address
 
   ListNode *getIntersectionNode(ListNode *head1, ListNode *head2) {
         
