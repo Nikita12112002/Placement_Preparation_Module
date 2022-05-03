@@ -4,14 +4,14 @@
 
 // Approach 2- optimal approach - TC:O(n) SC:O(1)
 
-bool isPalindrome(ListNode* head) {
+ bool isPalindrome(ListNode* head) {
         
         if(head==NULL || head->next==NULL)
             return true;
         
         ListNode *slow=head;
         ListNode *fast=head;
-        
+        //middle
         while(fast->next!=NULL && fast->next->next!=NULL)
         {
             slow=slow->next;
@@ -19,7 +19,7 @@ bool isPalindrome(ListNode* head) {
         }
         
         ListNode *prev=NULL,*newnode,*temp=slow->next;
-        
+        //rev
         while(temp!=NULL)
         {
             newnode=temp->next;
@@ -29,10 +29,11 @@ bool isPalindrome(ListNode* head) {
         }
         
         slow->next=prev;
-        slow=slow->next;
+        slow=slow->next; // increment slow
         
         ListNode *dummy=head;
         
+        // value check 
         while(slow!=NULL)
         {
             if(slow->val == head->val)
@@ -47,4 +48,3 @@ bool isPalindrome(ListNode* head) {
         
         return true;
     }
-    
