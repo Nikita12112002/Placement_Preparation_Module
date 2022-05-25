@@ -4,6 +4,9 @@
 // SC:O(n*m)
 
 // optimal approach--> using binary search
+//Time Complexity: O(row*log col) since the upper bound function takes log c time.
+
+//Space Complexity: O(1) since no extra space is required.
 
 int func(vector<int>&A  ,int mid)
 {
