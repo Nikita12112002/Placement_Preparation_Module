@@ -1,3 +1,6 @@
+//naive--using merge sort TC(n+m) SC:O(n);
+
+//optimal--using binary search
 class Solution {
 public:
        //binary search :Tc:O(min(n1,n2));
