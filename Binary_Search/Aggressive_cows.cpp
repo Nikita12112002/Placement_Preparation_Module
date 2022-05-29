@@ -1,3 +1,6 @@
+// also known by the name chess tournament
+//optimal approach --using binary search --TC:O(nlogn)
+
 bool blackbox(int mid , vector<int>&positions , int n , int c )
 {
     int cordinate=positions[0],count=1;
