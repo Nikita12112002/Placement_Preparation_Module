@@ -1,3 +1,5 @@
+//brute force : TC:O(n) and SC:O(n) -> using stack;
+//optimal approach:TC:O(n) and SC:O(1)
 class Solution {
 public:
     string reverseWords(string s) {
