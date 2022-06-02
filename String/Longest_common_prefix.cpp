@@ -17,3 +17,5 @@ public:
                    
     }
 };
+
+// can also be solve using trie data structures.
