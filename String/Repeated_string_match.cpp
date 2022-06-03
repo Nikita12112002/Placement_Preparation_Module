@@ -1,5 +1,3 @@
-// rabin karp algorithm :TC:O(n+m)
-
 class Solution {
 public:
     
