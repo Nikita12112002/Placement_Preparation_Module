@@ -29,7 +29,7 @@ public:
     }
 };
 
-//iterative
+//optimal - (n)
 
 class Solution {
 public:
