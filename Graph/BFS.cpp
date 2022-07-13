@@ -19,7 +19,7 @@ void bfs(vector<int> adj[] , int n , int s)
     while(q.empty()==false)
     {
        int u=q.front();
-        cout<<u<<" ";
+        cout<<u<<" ";   // print the bfs traversal
         q.pop();
         
         for(auto v:adj[u])
@@ -44,7 +44,7 @@ int main()
     
     for(int i=0 ; i<e ;i++)
     {
-        int u,v;
+        int u,v;      // nodes starts from 0 , so enter edges accordingly
         cin>>u>>v;
         
         adj[u].push_back(v);
