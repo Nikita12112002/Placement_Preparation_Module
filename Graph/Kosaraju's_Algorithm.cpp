@@ -3,6 +3,9 @@
 // transposethe graph
 // dfs according to finishing time. 
 
+//Tarjan’s Algorithm: The Tarjan’s Algorithm is an efficient graph algorithm that is used to find the Strongly Connected Component(SCC) in a directed graph by using only one DFS traversal in linear time complexity.
+//Kosaraju’s Algorithm: The Kosaraju’s Algorithm is also a Depth First Search based algorithm which is used to find the SCC in a directed graph in linear time complexity.
+
 #include <bits/stdc++.h>
 
 using namespace std;
