@@ -18,25 +18,24 @@ public:
         
         //floyd-warshell logic to update distance to get shortest path
         
-        for(int k=0 ; k<n ;k++)
-        {
-            for(int i=0 ; i<n ;i++)
-            {
-                for(int j=0 ; j<n ;j++)
-                {
-                    if(dis[i][k]!=INT_MAX && dis[k][j]!=INT_MAX)
-                    {
-                        if(dis[i][k]+dis[k][j] < dis[i][j])
-                        {
-                            dis[i][j]=dis[i][k]+dis[k][j];
-                        }
-                        
-                    }
-                    
-                }
-            }
-        }
-        
+
+        for(int k=0;k<n;k++)
+	    {
+	        for(int i=0;i<n;i++)
+	        {
+	            for(int j=0;j<n;j++)
+	            {
+	                if(dis[i][k]==INT_MAX or dis[k][j]==INT_MAX)
+	                continue;
+	                
+	                if(dis[i][j]==INT_MAX)
+	                dis[i][j] = dis[i][k] + dis[k][j];
+	                
+	                else 
+	                dis[i][j] = min(dis[i][j],dis[i][k] + dis[k][j]);
+	            }
+	        }
+	    }
         //count the cities which has less dis than the threshold distance
         
         int count=0,ans,maxi=n;
