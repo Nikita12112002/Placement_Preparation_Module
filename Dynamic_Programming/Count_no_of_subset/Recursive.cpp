@@ -1,13 +1,12 @@
 int dfs(vector<int>&num , int tar , int i)
 {
-    if(tar==0)
-        return 1;
     if(i==0)
     {
-        if(num[i]==tar)
+        if(tar==0 && num[0]==0)
+            return 2;
+        if(tar==0 || tar==num[0])
             return 1;
-        else
-            return 0;
+        return 0;
     }
     int notpick = dfs(num,tar,i-1);
     int pick =0;
