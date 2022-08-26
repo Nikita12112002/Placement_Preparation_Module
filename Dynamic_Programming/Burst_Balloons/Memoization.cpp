@@ -1,3 +1,4 @@
+// Tc: O(n3) SC:O(n2) + aux O(n)
 class Solution {
 public:
     int dfs(int i , int j , vector<int>&nums , vector<vector<int>>&dp)
