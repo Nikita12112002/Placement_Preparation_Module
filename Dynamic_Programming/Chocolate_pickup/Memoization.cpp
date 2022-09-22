@@ -14,9 +14,9 @@ int dfs(int i , int j1 , int j2 , int r  , int c , vector<vector<int>>&grid ,vec
         return dp[i][j1][j2];
     
     int maxi = -1e9;
-    for(int dj1=-1 ; dj1<=1 ; dj1++)
+    for(int dj1=-1 ; dj1<=1 ; dj1++) // for one movement of alice
     {
-        for(int dj2=-1 ; dj2<=1 ; dj2++)
+        for(int dj2=-1 ; dj2<=1 ; dj2++) // bob can have three diff movements
         {
             int value=0;
             if(j1==j2)
